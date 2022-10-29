@@ -25,10 +25,10 @@ function sub(subName) {
 
 	setTimeout(() => {
 		frame.style.animationName = "borderAnimation";
-		frame.style.animationDuration = "20s";
+		frame.style.animationDuration = "5s";
 
 		subCount.style.animationName = "backgroundAnimation";
-		subCount.style.animationDuration = "20s";
+		subCount.style.animationDuration = "5s";
 		subCount.innerText = subCountNumber;
 		updateSubCount();
 	}, 11000);
