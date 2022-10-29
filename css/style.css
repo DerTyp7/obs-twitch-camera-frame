@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+}
+body,
+html {
+	min-height: 100%;
+}
+
+#frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	border: 10px solid var(--border-color-1);
+	height: 100vh;
+	width: 100%;
+	background-color: transparent;
+	box-sizing: border-box;
+	border-image: linear-gradient(
+			to right,
+			var(--border-color-1),
+			var(--border-color-2)
+		)
+		1;
+	transition: border linear 200ms;
+	z-index: 100;
+	animation-name: borderAnimation;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+}
+
+#subCount {
+	background: var(--border-color-2);
+	height: 20px;
+	padding: 5px;
+	padding-bottom: 10px;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 17pt;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+	animation-name: backgroundAnimation;
+}
