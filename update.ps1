@@ -50,6 +50,4 @@ if ($newestVersionString -ne "") {
 else {
   Write-Output "No new version found!"
 }
-
-
-
+pause
