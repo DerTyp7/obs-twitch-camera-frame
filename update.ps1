@@ -40,7 +40,7 @@ if ($newestVersionString -ne "") {
     Invoke-WebRequest -Uri "https://github.com/DerTyp876/obs-twitch-camera-frame/archive/refs/tags/$newestVersionString.zip" -OutFile "./temp/$newestVersionString.zip"
     Write-Output "Extracting archive..."
     Expand-Archive -Path "./temp/$newestVersionString.zip" -DestinationPath "./temp/"
-    Get-ChildItem -Path "./temp/ts5-obs-overlay-$($newestVersionString -replace 'v')" -Recurse | Move-Item -Destination "./"
+    Get-ChildItem -Path "./temp/obs-twitch-camera-frame-$($newestVersionString -replace 'v')" -Recurse | Move-Item -Destination "./"
 
     Remove-Item "./temp" -Recurse -Force -Confirm
 
