@@ -50,4 +50,5 @@ if ($newestVersionString -ne "") {
 else {
   Write-Output "No new version found!"
 }
+Write-Output "You need to add your API-Key again to the config.js!"
 pause
