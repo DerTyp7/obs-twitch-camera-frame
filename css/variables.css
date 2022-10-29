@@ -1,7 +1,7 @@
 :root {
-	--border-color-1: rgb(139, 0, 0);
-	--border-color-2: rgb(255, 74, 74);
+	--border-color-1: rgb(113, 0, 0);
+	--border-color-2: rgb(235, 19, 19);
 
-	--border-color-flash-1: rgb(220, 32, 15);
-	--border-color-flash-2: rgb(210, 220, 15);
+	--border-color-flash-1: rgb(255, 27, 6);
+	--border-color-flash-2: rgb(208, 218, 20);
 }

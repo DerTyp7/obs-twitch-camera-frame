@@ -2,14 +2,6 @@
 	0% {
 		border-image: linear-gradient(
 				to top,
-				var(--border-color-1),
-				var(--border-color-2)
-			)
-			1;
-	}
-	10% {
-		border-image: linear-gradient(
-				to top,
 				var(--border-color-flash-1),
 				var(--border-color-flash-2)
 			)
@@ -23,19 +15,11 @@
 			)
 			1;
 	}
-	80% {
+	100% {
 		border-image: linear-gradient(
 				to top,
 				var(--border-color-flash-1),
 				var(--border-color-flash-2)
-			)
-			1;
-	}
-	100% {
-		border-image: linear-gradient(
-				to top,
-				var(--border-color-2),
-				var(--border-color-1)
 			)
 			1;
 	}
@@ -82,18 +66,12 @@
 
 @keyframes backgroundSubAnimation {
 	0% {
-		background: var(--border-color-1);
-	}
-	10% {
 		background: var(--border-color-flash-1);
 	}
 	50% {
 		background: var(--border-color-flash-2);
 	}
-	80% {
-		background: var(--border-color-flash-1);
-	}
 	100% {
-		background: var(--border-color-2);
+		background: var(--border-color-flash-1);
 	}
 }

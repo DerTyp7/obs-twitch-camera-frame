@@ -16,10 +16,10 @@ function updateSubCount() {
 
 function sub(subName) {
 	frame.style.animationName = "subAnimation";
-	frame.style.animationDuration = "5s";
+	frame.style.animationDuration = "2s";
 
 	subCount.style.animationName = "backgroundSubAnimation";
-	subCount.style.animationDuration = "5s";
+	subCount.style.animationDuration = "2s";
 
 	subCount.innerText = subName + " " + subCountNumber;
 
