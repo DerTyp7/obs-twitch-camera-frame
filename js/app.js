@@ -1,5 +1,6 @@
 const subCount = document.getElementById("subCount");
 const frame = document.getElementById("frame");
+const tfBanner = document.getElementById("teafire-banner");
 
 let subCountNumber = 0;
 
@@ -33,4 +34,34 @@ function sub(subName) {
 		updateSubCount();
 	}, 11000);
 }
+
+function showTealFireBanner() {
+	tfBanner.style.animationName = "tfBannerAnimation";
+	tfBanner.style.animationDuration = "3s";
+	tfBanner.style.animationDirection = "normal";
+	setTimeout(() => {
+		tfBanner.style.marginTop = "0px";
+		tfBanner.style.animationName = "";
+		tfBanner.style.animationDuration = "";
+	}, 3000);
+}
+
+function closeTealFireBanner() {
+	tfBanner.style.animationName = "tfBannerAnimation";
+	tfBanner.style.animationDuration = "3s";
+	tfBanner.style.animationDirection = "reverse";
+
+	setTimeout(() => {
+		tfBanner.style.marginTop = "-200px";
+		tfBanner.style.animationName = "";
+		tfBanner.style.animationDuration = "";
+	}, 3000);
+}
+
+setInterval(() => {
+	showTealFireBanner();
+	setTimeout(() => {
+		closeTealFireBanner();
+	}, 20000);
+}, 300000);
 updateSubCount();

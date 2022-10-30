@@ -55,3 +55,27 @@ html {
 	animation-duration: 20s;
 	animation-name: backgroundAnimation;
 }
+
+#teafire-banner {
+	height: 50px;
+	width: 180px;
+	padding: 20px;
+	margin-top: -200px;
+	z-index: 1;
+	animation-timing-function: linear;
+	float: right;
+}
+
+#teafire-banner p {
+	color: teal;
+	float: left;
+	font-size: 23pt;
+	font-weight: bolder;
+	padding-top: 8px;
+	padding-left: 5px;
+}
+#teafire-banner img {
+	color: teal;
+	height: 50px;
+	float: left;
+}

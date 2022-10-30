@@ -75,3 +75,12 @@
 		background: var(--border-color-flash-1);
 	}
 }
+
+@keyframes tfBannerAnimation {
+	from {
+		margin-top: -200px;
+	}
+	to {
+		margin-top: 0px;
+	}
+}
