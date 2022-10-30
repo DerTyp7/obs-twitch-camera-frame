@@ -16,6 +16,7 @@ fetch("https://api.tipeeestream.com/v2.0/site/socket")
 				});
 			});
 			socket.on("new-event", (data) => {
+				console.log(data);
 				if (data.event.type == "subscription") {
 					sub(data.event.parameters.username);
 				}
