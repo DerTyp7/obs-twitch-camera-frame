@@ -1,6 +1,6 @@
 const subCount = document.getElementById("subCount");
 const frame = document.getElementById("frame");
-const tfBanner = document.getElementById("teafire-banner");
+const tfBanner = document.getElementById("tealfire-banner");
 
 let subCountNumber = 0;
 
@@ -16,6 +16,8 @@ function updateSubCount() {
 }
 
 function sub(subName) {
+	particlesJS.load("particles-frame", "js/particles-sub.json");
+
 	frame.style.animationName = "subAnimation";
 	frame.style.animationDuration = "2s";
 
@@ -32,6 +34,8 @@ function sub(subName) {
 		subCount.style.animationDuration = "20s";
 		subCount.innerText = subCountNumber;
 		updateSubCount();
+		console.log(particlesJS);
+		particlesJS.load("particles-frame", "js/particles-none.json");
 	}, 11000);
 }
 
@@ -62,6 +66,8 @@ setInterval(() => {
 	showTealFireBanner();
 	setTimeout(() => {
 		closeTealFireBanner();
-	}, 20000);
-}, 300000);
+	}, 20000); //20000
+}, 300000); // 300000
 updateSubCount();
+
+particlesJS.load("tealfire-banner", "js/particles-banner.json");
