@@ -34,7 +34,6 @@ function sub(subName) {
 		subCount.style.animationDuration = "20s";
 		subCount.innerText = subCountNumber;
 		updateSubCount();
-		console.log(particlesJS);
 		particlesJS.load("particles-frame", "js/particles-none.json");
 	}, 11000);
 }
