@@ -1,3 +1,4 @@
 const CONFIG = {
 	apiKey: "",
+	twitchOAuth: "",
 };

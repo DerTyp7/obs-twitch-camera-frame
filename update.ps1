@@ -32,7 +32,16 @@ if ($newestVersionString -ne "") {
   else {
     Write-Output "Updating to newer version..."
 
-    Remove-Item * -Recurse -Force -Confirm
+    if (Test-Path "./config.js") {
+      if (Test-Path "./config-old.js") {
+        Remove-Item config-old.js
+      }
+      Copy-Item "./config.js" -Destination "./config-old.js"
+      Write-Output "config.js has been copied"
+    }
+    
+    
+    Remove-Item *  -Recurse -Force -Exclude config-old.js
 
     mkdir ./temp
     attrib +h ./temp
