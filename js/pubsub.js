@@ -3,6 +3,7 @@ let ws;
 let channelId;
 
 function changeColorTheme(theme) {
+	localStorage.setItem("theme", JSON.stringify(theme));
 	rootElem.style.setProperty("--border-color-1", theme[0]);
 	rootElem.style.setProperty("--border-color-2", theme[1]);
 }
@@ -104,4 +105,4 @@ function pubSubMain() {
 }
 
 pubSubMain();
-// changeColorTheme(CONFIG.themes.purple);
+changeColorTheme(JSON.parse(localStorage.getItem("theme")));
